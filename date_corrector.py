@@ -110,7 +110,7 @@ class DateCorrector:
 if __name__ == '__main__':
     # The files with corrected timestamp will be copied in a new folder called "output" in the original path to photos.
     # TODO: consider providing a destination path.
-    parser = argparse.ArgumentParser(description='Correct the date of photos.')
+    parser = argparse.ArgumentParser(description='Correct the date of photos. The files with corrected timestamp will be copied in a new folder called "output" in the original path to photos.')
     parser.add_argument('-p', '--path', type=str, help='Path to the folder', required=True)
     parser.add_argument('-x', '--prefix', type=str, help='Prefix to add', required=False, default='')
     parser.add_argument('-s', '--shift', type=int, help='Time shift in minutes to apply', required=True)
